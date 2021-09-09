@@ -1,4 +1,4 @@
-package views;
+package sample;
 
 import javafx.geometry.Insets;
 import javafx.geometry.Pos;
@@ -49,7 +49,7 @@ private String[] arImagenes ={"cr7.png,jimenez.png,kante.png,maradona.png,mbappe
             for (int j = 0; j < 3; j++) {
                 arBtnCartas[j][i] = new Button();
                 arBtnCartas[j][i].setPrefSize(120,140);
-file = new File( "src/main/java/sample/images"+arImagenes[i]);
+file = new File( "sample/images"+arImagenes[i]);
                 imgCarta = new Image("sample/images"+arImagenes[i]);
                 ImageView view = new ImageView(imgCarta);
                 view.setFitHeight(140);
@@ -61,7 +61,7 @@ file = new File( "src/main/java/sample/images"+arImagenes[i]);
             }
         }
         lblCarta =new Label();
-        imgCarta = new Image("sample/images/"+arImagenes[0]);
+        imgCarta = new Image("sample/images"+arImagenes[0]);
         ImageView view = new ImageView(imgCarta);
         view.setFitWidth(140);
         view.setFitHeight(160);
