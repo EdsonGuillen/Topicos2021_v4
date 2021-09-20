@@ -12,4 +12,6 @@ module com.example.topicos2021_v4 {
 
     opens sample to javafx.fxml;
     exports sample;
+    exports sample.views;
+    opens sample.views to javafx.fxml;
 }

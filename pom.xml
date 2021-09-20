@@ -100,7 +100,7 @@
                         <!-- Default configuration for running with: mvn clean javafx:run -->
                         <id>default-cli</id>
                         <configuration>
-                            <mainClass>com.example.topicos2021_v4/sample.HelloApplication
+                            <mainClass>com.example.topicos2021_v4/sample.views.HelloApplication
                             </mainClass>
                         </configuration>
                     </execution>

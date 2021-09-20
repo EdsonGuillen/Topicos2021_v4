@@ -7,6 +7,7 @@ import javafx.scene.control.MenuBar;
 import javafx.scene.control.MenuItem;
 import javafx.scene.layout.BorderPane;
 import javafx.stage.Stage;
+import sample.views.Loteria;
 
 public class Principal extends Application {
     private BorderPane bdpPrincipal;
