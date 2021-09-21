@@ -14,7 +14,7 @@ import javafx.stage.Stage;
 import java.io.File;
 
 public class Loteria extends Stage{
-private String[] arImagenes ={"cr7.png,jimenez.png,kante.png,maradona.png,mbappe.png,messi.png,Neymar.png,PELE.png,sanchez.png"};
+private String[] arImagenes ={""};
     private Scene escena;
     private VBox vBox;
     private HBox hBox1, hBox2;
@@ -47,8 +47,8 @@ private String[] arImagenes ={"cr7.png,jimenez.png,kante.png,maradona.png,mbappe
             for (int j = 0; j < 3; j++) {
                 arBtnCartas[j][i] = new Button();
                 arBtnCartas[j][i].setPrefSize(120,140);
-file = new File( "sample/images"+arImagenes[i]);
-                imgCarta = new Image("sample/images"+arImagenes[i]);
+file = new File( "src/main/java/sample/imagenes/"+arImagenes[0]);
+                imgCarta = new Image(file.toURI().toString());
                 ImageView view = new ImageView(imgCarta);
                 view.setFitHeight(140);
                 view.setFitWidth(120);
@@ -59,7 +59,7 @@ file = new File( "sample/images"+arImagenes[i]);
             }
         }
         lblCarta =new Label();
-        imgCarta = new Image("sample/images"+arImagenes[0]);
+        imgCarta = new Image(file.toURI().toString());
         ImageView view = new ImageView(imgCarta);
         view.setFitWidth(140);
         view.setFitHeight(160);

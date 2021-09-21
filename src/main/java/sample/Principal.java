@@ -55,7 +55,7 @@ public class Principal extends Application {
     private void MenuOpciones(int opc){
         switch (opc){
             case 1:new Loteria(); break;
-            //aqui van los demas casos que se traajaran en clase
+            //aqui van los demas casos que se trabajaran en clase
             case 20: System.exit(0);
         }
     }
